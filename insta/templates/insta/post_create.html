@@ -1,0 +1,12 @@
+{% extends insta/base.html%}
+{% load crispy_forms_tags %}
+{% crispy form %}
+{% block content %}
+  <div class="panel panel-default" style="width: 500px; margin: 0 auto;">
+    <div class="panel-body">
+
+      {% csrf_token  %}
+    </div>
+  </div>
+
+{% endblock %}
